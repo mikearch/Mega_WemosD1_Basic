@@ -23,7 +23,9 @@ void setup() {
 
 void loop() {
   Serial.println (c);
+  Serial1.print ("<");
   Serial1.print(c);
+  Serial1.print(">");
   delay(5000);
   c = c+1;
 }
