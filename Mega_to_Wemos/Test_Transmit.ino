@@ -13,6 +13,30 @@
 
 
 */
+
+//************Transmit Variables******************************************
+string begOfLine = "<";
+string endOfLine = ">";
+string delim =",";
+//**********Heating Group 1 Transmit Codes*******************************
+string burnState = "a";             //burner on/off state
+string pumpState = "b";             //pump on/off state
+string indrTemp =  "c";             //Curr indoor temp
+string htgHold = "d";               //Away heating hold time
+string lowTemp = "e";               //Min indoor set temp
+string delayTime = "f";             //Delay time set point
+//**********Power Group Transmit Codes**********************************
+string powerStatus = "g";           //status of house power
+
+//**********Test Variables************************************************
+boolean burner = false;
+boolean pump = false;
+float inTemp = 21.3;
+boolean HHold = false;
+float mTemp = 10;
+int dTime = 120;
+boolean = false;
+
 int c = 1;     //initializes counter
 
 void setup() {
@@ -23,9 +47,16 @@ void setup() {
 
 void loop() {
   Serial.println (c);
-  Serial1.print ("<");
-  Serial1.print(c);
-  Serial1.print(">");
+  Serial1.print (begOfLine);
+  Serial1.print(burnState);
+  Serial1.print(delim);
+  Serial1.print(burner);
+  Serial1.print(delim);
+  Serial1.print(indrTemp);
+  Serial1.print(delim);
+  Serial1.print(inTemp);
+  Serial1.print(delim);
+  Serial1.print(endOfLine);
   delay(5000);
   c = c+1;
 }
