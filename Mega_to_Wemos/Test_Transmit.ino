@@ -46,8 +46,10 @@ void setup() {
 }
 
 void loop() {
-  Serial.println (c);
+
   Serial1.print (begOfLine);
+  Serial1.print (c);
+  Serial1.print(delim);
   Serial1.print(burnState);
   Serial1.print(delim);
   Serial1.print(burner);
