@@ -35,7 +35,7 @@ float inTemp = 21.3;
 boolean HHold = false;
 float mTemp = 10;
 int dTime = 120;
-boolean = false;
+boolean powerState= false;
 
 int c = 1;     //initializes counter
 
