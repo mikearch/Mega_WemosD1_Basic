@@ -15,18 +15,18 @@
 */
 
 //************Transmit Variables******************************************
-string begOfLine = "<";
-string endOfLine = ">";
-string delim =",";
+String begOfLine = "<";
+String endOfLine = ">";
+String delim =",";
 //**********Heating Group 1 Transmit Codes*******************************
-string burnState = "a";             //burner on/off state
-string pumpState = "b";             //pump on/off state
-string indrTemp =  "c";             //Curr indoor temp
-string htgHold = "d";               //Away heating hold time
-string lowTemp = "e";               //Min indoor set temp
-string delayTime = "f";             //Delay time set point
+String burnState = "a";             //burner on/off state
+String pumpState = "b";             //pump on/off state
+String indrTemp =  "c";             //Curr indoor temp
+String htgHold = "d";               //Away heating hold time
+String lowTemp = "e";               //Min indoor set temp
+String delayTime = "f";             //Delay time set point
 //**********Power Group Transmit Codes**********************************
-string powerStatus = "g";           //status of house power
+String powerStatus = "g";           //status of house power
 
 //**********Test Variables************************************************
 boolean burner = false;
