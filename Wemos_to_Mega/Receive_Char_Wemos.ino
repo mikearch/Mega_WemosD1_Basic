@@ -20,7 +20,7 @@ at http://rntLab.comma
 //const char* password = "QFYTA2E2";radovica server
 
 //lUBLJANA Logon credentials
-const char* ssid = "8D887DA";
+const char* ssid = "8D87DA";
 const char* password = "EVW327N036930";
 
 // Change the variable to your Raspberry Pi IP address, so it connects to your MQTT broker
