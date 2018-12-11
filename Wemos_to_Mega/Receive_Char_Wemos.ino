@@ -148,7 +148,7 @@ void setup() {
     Serial.println("<Arduino is ready>");
     setup_wifi();
 //***********Setup for PubSub*********************************
-    client.setServer(server, 1883);
+    client.setServer(mqtt_server, 1883);
     client.setCallback(callback);
 
     // Allow the hardware to sort itself out
@@ -161,7 +161,7 @@ void loop() {
     showNewData();
 
 //For PubSub Routine
-f (!client.connected()) {
+if (!client.connected()) {
     reconnect();
   }
   if(!client.loop())
