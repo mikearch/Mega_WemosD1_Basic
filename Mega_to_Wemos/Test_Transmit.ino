@@ -29,9 +29,9 @@ const int arraySize_float = 2;
 const int arraySize_longUsInt = 2;
 
 //Defines arrays for pubsub
-float arrayFloat[arraySize_float];
-boolean arrayBoolean[arraySize_boolean];
-unsignedlong arrayLongUs[arraySize_longUsInt];
+float arrayFloat[arraySize_float] = {20.3, 21.7};
+boolean arrayBoolean[arraySize_boolean] = {false};
+unsigned long arrayLongUs[arraySize_longUsInt] = {456789, 123456};
 
 //Array identifier Variables
 String arrayFloatVars ="f";
@@ -42,8 +42,8 @@ String arrayLongUSVars ="l";
 boolean status_Home = false;
 float temp_Bar = 21.9;
 float temp_HtOn = 10;
-unsignedlong time_HeatCycle = 7200;
-unsignedlong time_CycleRem = 2430;
+unsigned long time_HeatCycle = 7200;
+unsigned long time_CycleRem = 2430;
 
 //************Transmit Variables******************************************
 String begOfLine = "<";
@@ -93,6 +93,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayFloat[n]);
     Serial1.print(endOfLine);
+    delay(1000);
   }
 
 //Boolean array variable transmision
@@ -104,6 +105,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayBoolean[n]);
     Serial1.print(endOfLine);
+    delay(1000);
   }
 
 //Unsigned Long array variable transmision
@@ -115,6 +117,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayLongUs[n]);
     Serial1.print(endOfLine);
+    delay(1000);
   }
 
 delay(35000);
