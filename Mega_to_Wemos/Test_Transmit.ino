@@ -94,7 +94,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayFloat[n]);
     Serial1.print(endOfLine);
-    flush();
+    Serial1.flush();
     delay(1000);
   }
 
@@ -107,7 +107,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayBoolean[n]);
     Serial1.print(endOfLine);
-    flush();
+    Serial1.flush();
     delay(1000);
   }
 
@@ -120,7 +120,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayLongUs[n]);
     Serial1.print(endOfLine);
-    flush();
+    Serial1.flush();
     delay(1000);
   }
 
