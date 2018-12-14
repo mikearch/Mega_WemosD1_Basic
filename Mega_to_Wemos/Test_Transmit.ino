@@ -39,17 +39,18 @@ String arrayBoolVars ="b";
 String arrayLongUSVars ="l";
 
 //Reporting Variables
+/*
 boolean status_Home = false;
 float temp_Bar = 21.9;
 float temp_HtOn = 10;
 unsigned long time_HeatCycle = 7200;
 unsigned long time_CycleRem = 2430;
-
+*/
 //************Transmit Variables******************************************
 String begOfLine = "<";
 String endOfLine = ">";
 String delim =",";
-
+String messageConc;
 /*
 //**********Heating Group 1 Transmit Codes*******************************
 String burnState = "a";             //burner on/off state
@@ -93,6 +94,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayFloat[n]);
     Serial1.print(endOfLine);
+    flush();
     delay(1000);
   }
 
@@ -105,6 +107,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayBoolean[n]);
     Serial1.print(endOfLine);
+    flush();
     delay(1000);
   }
 
@@ -117,6 +120,7 @@ void loop() {
     Serial1.print(delim);
     Serial1.print(arrayLongUs[n]);
     Serial1.print(endOfLine);
+    flush();
     delay(1000);
   }
 
