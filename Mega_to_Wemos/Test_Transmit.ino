@@ -38,44 +38,11 @@ String arrayFloatVars ="f";
 String arrayBoolVars ="b";
 String arrayLongUSVars ="l";
 
-//Reporting Variables
-/*
-boolean status_Home = false;
-float temp_Bar = 21.9;
-float temp_HtOn = 10;
-unsigned long time_HeatCycle = 7200;
-unsigned long time_CycleRem = 2430;
-*/
 //************Transmit Variables******************************************
 String begOfLine = "<";
 String endOfLine = ">";
 String delim =",";
-String messageConc;
-/*
-//**********Heating Group 1 Transmit Codes*******************************
-String burnState = "a";             //burner on/off state
-String pumpState = "b";             //pump on/off state
-String indrTemp =  "c";             //Curr indoor temp
-String htgHold = "d";               //Away heating hold time
-String lowTemp = "e";               //Min indoor set temp
-String delayTime = "f";             //Delay time set point
-//**********Power Group Transmit Codes**********************************
-String powerStatus = "g";           //status of house power
 
-
-
-//**********Test Variables************************************************
-boolean burner = false;
-boolean pump = false;
-float inTemp = 21.3;
-boolean HHold = false;
-float mTemp = 10;
-int dTime = 120;
-boolean powerState= false;
-*/
-
-
-int c = 1;     //initializes counter
 int n = 0;     //initializes array print counter
 
 void setup() {
@@ -125,14 +92,5 @@ void loop() {
   }
 
 delay(35000);
-/*
-  Serial1.print(delim);
-  Serial1.print(indrTemp);
-  Serial1.print(delim);
-  Serial1.print(inTemp);
-  Serial1.print(delim);
-  Serial1.print(endOfLine);
-  delay(5000);
-  c = c+1;
-  */
+
 }
