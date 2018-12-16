@@ -158,7 +158,6 @@ void setup() {
 void loop() {
 //For serial comm
     recvWithStartEndMarkers();
-    showNewData();
 
 //For PubSub Routine
 if (!client.connected()) {
@@ -175,6 +174,7 @@ if (!client.connected()) {
         client.publish("bar/test", receivedChars);
       }
     }
+    showNewData();
 }
 //For serial comm
 void recvWithStartEndMarkers() {
@@ -184,7 +184,6 @@ void recvWithStartEndMarkers() {
     char endMarker = '>';
     char rc;
 
-//For serial comm
      while (Serial.available() > 0 && newData == false) {
         rc = Serial.read();
 
