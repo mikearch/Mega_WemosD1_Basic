@@ -168,12 +168,13 @@ if (!client.connected()) {
     client.connect("ESP3_Bar");
     delay(2000);
     Tnow = millis();
-    if (Tnow - lastMeasure > 30000) {
-    lastMeasure = Tnow;
-    Serial.println("publish");
-    client.publish("bar/test", receivedChars);
-
-}
+    if (Tnow - lastMeasure > 500) {
+      lastMeasure = Tnow;
+      if (newData == true) {
+        Serial.println("publish");
+        client.publish("bar/test", receivedChars);
+      }
+    }
 }
 //For serial comm
 void recvWithStartEndMarkers() {
