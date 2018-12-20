@@ -8,7 +8,6 @@ PubSub Resources for this project provided by Rui Santos
 at http://rntLab.comma
 */
 
-
 //******PubSub Libraries*******************************
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
@@ -20,8 +19,8 @@ at http://rntLab.comma
 //const char* password = "QFYTA2E2";radovica server
 
 //lUBLJANA Logon credentials
-const char* ssid = "8D87DA";
-const char* password = "EVW327N036930";
+const char* ssid = "335C8E";
+const char* password = "EVW32C0N00099679";
 
 // Change the variable to your Raspberry Pi IP address, so it connects to your MQTT broker
 //const char* mqtt_server = "192.168.1.101"; //use for radovica ip
@@ -46,9 +45,6 @@ boolean newData = false;
 //Variables-not sure what thisis for
 int chk;
 
-
-
-
 //**************************************************************
 //*******************Setup************************************
 void setup() {
@@ -58,9 +54,7 @@ void setup() {
 //***********Setup for PubSub*********************************
     client.setServer(mqtt_server, 1883);
     client.setCallback(callback);
-
-    // Allow the hardware to sort itself out
-    delay(1500);
+    delay(1500);  // Allow the hardware to sort itself out
 }
 
 void loop() {

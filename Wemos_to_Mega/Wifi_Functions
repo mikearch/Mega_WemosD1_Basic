@@ -18,6 +18,7 @@ void reconnect() {
        if (client.connect("ESP2_Garage")) {
       That should solve your MQTT multiple connections problem
     */
+
     if (client.connect("ESP3_Bar")) {
       Serial.println("connected");
       // Subscribe or resubscribe to a topic
