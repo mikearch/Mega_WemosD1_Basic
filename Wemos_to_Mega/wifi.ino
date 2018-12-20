@@ -1,4 +1,6 @@
 //For Wifi functions
+
+
 //**********PubSub Reconnect Funtion********************************
 // This functions reconnects your ESP8266 to your MQTT broker
 // Change the function below if you want to subscribe to more topics with your ESP8266
@@ -34,6 +36,8 @@ void reconnect() {
     }
   }
 }
+
+
 
 //*********PubSub Callback Function***********************************
 // This functions is executed when some device publishes a message to a topic that your ESP8266 is subscribed to

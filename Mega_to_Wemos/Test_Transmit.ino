@@ -31,7 +31,7 @@ const int arraySize_longUsInt = 2;
 //Defines arrays for pubsub
 float arrayFloat[arraySize_float] = {20.3, 21.7};
 boolean arrayBoolean[arraySize_boolean] = {false};
-unsigned long arrayLongUs[arraySize_longUsInt] = {456789, 123456};
+unsigned long arrayLongUs[arraySize_longUsInt] = {7200, 5600};
 
 //Array identifier Variables
 String arrayFloatVars ="f";
@@ -52,7 +52,10 @@ void setup() {
 }
 
 void loop() {
+
+printFloat();    //Float array variable transmision
 //Float array variable transmision
+void printFloat(){
   for (n=0; n <= arraySize_float - 1; n++ ) {
     Serial1.print (begOfLine);
     Serial1.print (arrayFloatVars);
@@ -64,8 +67,12 @@ void loop() {
     Serial1.flush();
     delay(1000);
   }
+}
+
+printBoolean();  //Boolean array variable transmision
 
 //Boolean array variable transmision
+void printBoolean(){
   for (n=0; n <= arraySize_boolean - 1; n++ ) {
     Serial1.print (begOfLine);
     Serial1.print (arrayBoolVars);
@@ -77,8 +84,13 @@ void loop() {
     Serial1.flush();
     delay(1000);
   }
+}
+
 
 //Unsigned Long array variable transmision
+printLongUsInt();
+//Unsigned Long array variable transmision
+Void printLongUsInt(){
   for (n=0; n <= arraySize_longUsInt - 1; n++ ) {
     Serial1.print (begOfLine);
     Serial1.print (arrayLongUSVars);
@@ -90,6 +102,7 @@ void loop() {
     Serial1.flush();
     delay(1000);
   }
+}
 
 delay(35000);
 
