@@ -28,3 +28,19 @@ void printBoolean(){
     delay(1000);
   }
 }
+
+//Unsigned Long array variable transmision
+void printLongUsInt(){
+  for (n=0; n <= arraySize_longUsInt - 1; n++ ) {
+    Serial1.print (begOfLine);
+    Serial1.print (arrayLongUSVars);
+    Serial1.print(delim);
+    Serial1.print(n);
+    Serial1.print(delim);
+    Serial1.print(arrayLongUs[n]);
+    Serial1.print(endOfLine);
+    Serial1.flush();
+    delay(1000);
+  }
+
+}
