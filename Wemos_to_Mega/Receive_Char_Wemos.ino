@@ -15,16 +15,18 @@ at http://rntLab.comma
 // Change the credentials below, so your ESP8266 connects to your router
 
 //RADOVICA logon credentials
-//const char* ssid = "HUAWEI-E5776-89CD";radovica server
-//const char* password = "QFYTA2E2";radovica server
+const char* ssid = "HUAWEI-E5776-89CD";radovica server
+const char* password = "QFYTA2E2";radovica server
 
+//Wife login--comment out all except one location
 //lUBLJANA Logon credentials
-const char* ssid = "335C8E";
-const char* password = "EVW32C0N00099679";
+//const char* ssid = "335C8E";
+//const char* password = "EVW32C0N00099679";
+
 
 // Change the variable to your Raspberry Pi IP address, so it connects to your MQTT broker
-//const char* mqtt_server = "192.168.1.101"; //use for radovica ip
-const char* mqtt_server = "192.168.0.24"; //use for ljubljana ip
+const char* mqtt_server = "192.168.1.101"; //use for radovica ip
+//const char* mqtt_server = "192.168.0.24"; //use for ljubljana ip
 
 // Initializes the espClient. You should change the espClient name if you have multiple ESPs running in your home automation system
 WiFiClient barTest;
