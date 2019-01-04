@@ -29,8 +29,8 @@ const char* mqtt_server = "192.168.1.101"; //use for radovica ip
 //const char* mqtt_server = "192.168.0.24"; //use for ljubljana ip
 
 // Initializes the espClient. You should change the espClient name if you have multiple ESPs running in your home automation system
-WiFiClient barTest;
-PubSubClient client(barTest);
+WiFiClient ESP3_Bar;
+PubSubClient client(ESP3_Bar);
 long lastMsg = 0;
 char msg[50];
 int value = 0;
