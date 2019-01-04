@@ -15,8 +15,8 @@ at http://rntLab.comma
 // Change the credentials below, so your ESP8266 connects to your router
 
 //RADOVICA logon credentials
-const char* ssid = "HUAWEI-E5776-89CD";radovica server
-const char* password = "QFYTA2E2";radovica server
+const char* ssid = "HUAWEI-E5776-89CD";//radovica server
+const char* password = "QFYTA2E2";//radovica server
 
 //Wife login--comment out all except one location
 //lUBLJANA Logon credentials
